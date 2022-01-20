@@ -29,7 +29,7 @@ export default function Banner() {
   const theme = useTheme();
 
   return (
-    <Box sx={{ position: "relative" }} id="home">
+    <Box sx={{ position: "relative", overflowX: "hidden" }} id="home">
       <ImageElement src="/element.png" />
 
       <Container maxWidth="md">

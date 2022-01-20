@@ -22,7 +22,7 @@ export default function AboutTwo() {
   const theme = useTheme();
 
   return (
-    <Container maxWidth="md">
+    <Container maxWidth="md" sx={{ overflowX: "hidden" }}>
       <GridCustom container spacing={3}>
         <Grid item sm={6} md={6} data-aos-delay="500" data-aos="fade-left">
           <Typography variant="h5" sx={{ fontWeight: "bold" }}>

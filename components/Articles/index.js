@@ -92,6 +92,7 @@ export default function Articles() {
     <Box
       sx={{
         position: "relative",
+        overflowX: "hidden",
       }}
       id="blog"
     >

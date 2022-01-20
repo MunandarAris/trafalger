@@ -18,7 +18,7 @@ export default function AboutOne() {
   const theme = useTheme();
 
   return (
-    <Container maxWidth="md" id="about-us">
+    <Container maxWidth="md" id="about-us" sx={{ overflowX: "hidden" }}>
       <Grid
         container
         sx={{ alignItems: "center", justifyContent: "space-between" }}

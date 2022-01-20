@@ -45,7 +45,7 @@ export default function Service() {
 
   return (
     <Box
-      style={{ position: "relative", overflow: "hidden" }}
+      style={{ position: "relative", overflowX: "hidden" }}
       id="find-a-doctor"
     >
       <ImageCustomElement src="/vector.png" />

@@ -68,6 +68,7 @@ export default function Footer() {
       sx={{
         backgroundColor: theme.palette.primary.main,
         position: "relative",
+        overflow: "hidden",
       }}
     >
       <ImageCustomTwo src="/elementFooter1.png" />
