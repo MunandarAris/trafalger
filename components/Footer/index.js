@@ -74,7 +74,7 @@ export default function Footer() {
 
       <Container maxWidth="md" sx={{ padding: "5rem 0rem" }}>
         <Grid container justifyContent="space-between" alignItems="baseline">
-          <Grid item xs={12} sm={12} md={3} paddingX={2}>
+          <Grid item xs={12} sm={12} md={3} paddingX={2} data-aos="fade-up">
             <Image
               src="/footer.png"
               width={90}
@@ -97,7 +97,14 @@ export default function Footer() {
             </Typography>
           </Grid>
 
-          <Grid item sm={4} md={2} paddingX={2}>
+          <Grid
+            item
+            sm={4}
+            md={2}
+            paddingX={2}
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <Typography
               variant="body2"
               color="#fff"
@@ -120,7 +127,14 @@ export default function Footer() {
             ))}
           </Grid>
 
-          <Grid item sm={4} md={2} paddingX={2}>
+          <Grid
+            item
+            sm={4}
+            md={2}
+            paddingX={2}
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <Typography
               variant="body2"
               color="#fff"
@@ -143,7 +157,14 @@ export default function Footer() {
             ))}
           </Grid>
 
-          <Grid item sm={4} md={2} paddingX={2}>
+          <Grid
+            item
+            sm={4}
+            md={2}
+            paddingX={2}
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <Typography
               variant="body2"
               color="#fff"

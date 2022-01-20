@@ -134,7 +134,14 @@ export default function Articles() {
           <ImageCustom src="/elementFooter1.png" />
 
           {data.map((item, index) => (
-            <Grid item sm={6} md={4} key={index}>
+            <Grid
+              item
+              sm={6}
+              md={4}
+              key={index}
+              data-aos="flip-left"
+              data-aos-delay={100 * index}
+            >
               <Card
                 sx={{
                   borderRadius: "15px",

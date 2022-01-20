@@ -32,10 +32,18 @@ export default function AboutOne() {
           sx={{
             margin: { xs: "auto", sm: "0rem" },
           }}
+          data-aos="fade-left"
         >
           <ImageCustom src="/illustration1.svg" width={400} height={400} />
         </Grid>
-        <Grid item xs={12} sm={6} md={6}>
+        <Grid
+          item
+          xs={12}
+          sm={6}
+          md={6}
+          data-aos="fade-right"
+          data-aos-delay="500"
+        >
           <Typography variant="h5" sx={{ fontWeight: "bold" }}>
             Leading healthcare providers
           </Typography>

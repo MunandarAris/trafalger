@@ -87,7 +87,7 @@ export default function Testimonial() {
             }}
           >
             <Grid item xs={12} sm={4} md={4}>
-              <ImageCustom />
+              <ImageCustom data-aos="flip-left" />
             </Grid>
             <Grid item xs={12} sm={6} md={6}>
               <Typography

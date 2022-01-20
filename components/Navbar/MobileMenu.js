@@ -1,7 +1,14 @@
 import React from "react";
 
 // Mui
-import { Box, Drawer, List, ListItem, Typography } from "@mui/material";
+import {
+  Box,
+  Divider,
+  Drawer,
+  List,
+  ListItem,
+  Typography,
+} from "@mui/material";
 import { styled } from "@mui/system";
 
 // icons
@@ -58,32 +65,58 @@ const CloseIcons = styled(Close)(({ theme }) => ({
   backgroundColor: "#fff",
 }));
 
+// link menu
+const LinkMenu = [
+  {
+    title: "Home",
+    url: "home",
+  },
+  {
+    title: "Find a doctor",
+    url: "find-a-doctor",
+  },
+  {
+    title: "Blog",
+    url: "blog",
+  },
+  {
+    title: "Testimonials",
+    url: "testimonials",
+  },
+  {
+    title: "About us",
+    url: "about-us",
+  },
+];
+
 export default function MobileMenu({ open, handle }) {
   //   list menu
   const ListMenu = () => (
     <BoxCustom>
       <List>
-        <ListItem
-          sx={{ display: "flex", justifyContent: "center" }}
-          onClick={handle}
-        >
-          <CloseIcons />
+        <ListItem sx={{ display: "flex", justifyContent: "space-between" }}>
+          <Image src="/footer.png" width={110} height={30} />
+
+          <CloseIcons onClick={handle} />
         </ListItem>
 
-        <ListItem>
-          <Typography
-            variant="body1"
-            sx={{ color: "#fff", whiteSpace: "pre-line", textAlign: "center" }}
-          >
-            Trafalgar provides progressive, and affordable healthcare,
-            accessible on mobile and online for everyone
-          </Typography>
-        </ListItem>
+        <Divider sx={{ backgroundColor: "#fff", marginTop: ".4rem" }} />
+
+        {LinkMenu?.map((item, index) => (
+          <ListItem key={index} sx={{ marginTop: ".9rem" }}>
+            <a
+              href={`#${item.url}`}
+              style={{
+                color: "#fff",
+                textDecoration: "none",
+              }}
+              onClick={handle}
+            >
+              {item.title}
+            </a>
+          </ListItem>
+        ))}
       </List>
-
-      <Box sx={{ textAlign: "center" }}>
-        <Image src="/illustration.svg" width={200} height={200} />
-      </Box>
     </BoxCustom>
   );
 

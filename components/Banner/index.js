@@ -38,7 +38,7 @@ export default function Banner() {
           sx={{ paddingTop: "5rem", alignItems: "center" }}
           spacing={3}
         >
-          <Grid item sm={6} md={6}>
+          <Grid item sm={6} md={6} data-aos="fade-right">
             <Typography
               variant="h4"
               sx={{
@@ -73,7 +73,14 @@ export default function Banner() {
             </Button>
           </Grid>
 
-          <Grid item sm={6} md={6} sx={{ textAlign: "center" }}>
+          <Grid
+            item
+            sm={6}
+            md={6}
+            sx={{ textAlign: "center" }}
+            data-aos="fade-left"
+            data-aos-delay="800"
+          >
             <Image
               src="/illustration.svg"
               width={400}

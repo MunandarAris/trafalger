@@ -24,7 +24,7 @@ export default function AboutTwo() {
   return (
     <Container maxWidth="md">
       <GridCustom container spacing={3}>
-        <Grid item sm={6} md={6}>
+        <Grid item sm={6} md={6} data-aos-delay="500" data-aos="fade-left">
           <Typography variant="h5" sx={{ fontWeight: "bold" }}>
             Download our mobile apps
           </Typography>
@@ -55,7 +55,7 @@ export default function AboutTwo() {
           </Box>
         </Grid>
 
-        <Grid item sm={6} md={6}>
+        <Grid item sm={6} md={6} data-aos="fade-right">
           <Image
             src="/illustration2.svg"
             width={400}

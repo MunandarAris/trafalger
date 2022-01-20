@@ -6,6 +6,7 @@ import {
   Toolbar,
   Typography,
   Slide,
+  Container,
   useScrollTrigger,
 } from "@mui/material";
 import { Box, styled } from "@mui/system";
@@ -100,80 +101,87 @@ export default function Navbar(props) {
     <>
       <HideOnScroll {...props}>
         <Navigation elevation={0}>
-          <TolBar>
-            <BoxWrapper>
-              <Logo1 variant="h6">T</Logo1>
-              <Logo2 variant="h6">Trafalgar</Logo2>
-            </BoxWrapper>
+          <Container
+            sx={{
+              padding: { xs: "0rem" },
+            }}
+            maxWidth="lg"
+          >
+            <TolBar>
+              <BoxWrapper>
+                <Logo1 variant="h6">T</Logo1>
+                <Logo2 variant="h6">Trafalgar</Logo2>
+              </BoxWrapper>
 
-            <BoxMenu sx={{ display: { xs: "none", sm: "none", md: "flex" } }}>
-              <MenuLink variant="body1">
-                <a
-                  href="#home"
-                  style={{
-                    color: "#000000",
-                    textDecoration: "none",
-                  }}
-                >
-                  Home
-                </a>
-              </MenuLink>
-              <MenuLink variant="body1">
-                <a
-                  href="#find-a-doctor"
-                  style={{
-                    color: "#000000",
-                    textDecoration: "none",
-                  }}
-                >
-                  {" "}
-                  Find a doctor{" "}
-                </a>
-              </MenuLink>
-              <MenuLink variant="body1">
-                <a
-                  href="#blog"
-                  style={{
-                    color: "#000000",
-                    textDecoration: "none",
-                  }}
-                >
-                  {" "}
-                  Blog{" "}
-                </a>
-              </MenuLink>
-              <MenuLink variant="body1">
-                <a
-                  href="#testimonials"
-                  style={{
-                    color: "#000000",
-                    textDecoration: "none",
-                  }}
-                >
-                  {" "}
-                  Testimonials{" "}
-                </a>
-              </MenuLink>
-              <MenuLink variant="body1">
-                <a
-                  href="#about-us"
-                  style={{
-                    color: "#000000",
-                    textDecoration: "none",
-                  }}
-                >
-                  {" "}
-                  About us{" "}
-                </a>
-              </MenuLink>
-            </BoxMenu>
+              <BoxMenu sx={{ display: { xs: "none", sm: "none", md: "flex" } }}>
+                <MenuLink variant="body1">
+                  <a
+                    href="#home"
+                    style={{
+                      color: "#000000",
+                      textDecoration: "none",
+                    }}
+                  >
+                    Home
+                  </a>
+                </MenuLink>
+                <MenuLink variant="body1">
+                  <a
+                    href="#find-a-doctor"
+                    style={{
+                      color: "#000000",
+                      textDecoration: "none",
+                    }}
+                  >
+                    {" "}
+                    Find a doctor{" "}
+                  </a>
+                </MenuLink>
+                <MenuLink variant="body1">
+                  <a
+                    href="#blog"
+                    style={{
+                      color: "#000000",
+                      textDecoration: "none",
+                    }}
+                  >
+                    {" "}
+                    Blog{" "}
+                  </a>
+                </MenuLink>
+                <MenuLink variant="body1">
+                  <a
+                    href="#testimonials"
+                    style={{
+                      color: "#000000",
+                      textDecoration: "none",
+                    }}
+                  >
+                    {" "}
+                    Testimonials{" "}
+                  </a>
+                </MenuLink>
+                <MenuLink variant="body1">
+                  <a
+                    href="#about-us"
+                    style={{
+                      color: "#000000",
+                      textDecoration: "none",
+                    }}
+                  >
+                    {" "}
+                    About us{" "}
+                  </a>
+                </MenuLink>
+              </BoxMenu>
 
-            <BoxMenu sx={{ display: { md: "none", lg: "none" } }}>
-              <Humberger variant="h5" onClick={handleDrawerOpenMenu}>
-                <Menu />
-              </Humberger>
-            </BoxMenu>
-          </TolBar>
+              <BoxMenu sx={{ display: { md: "none", lg: "none" } }}>
+                <Humberger variant="h5" onClick={handleDrawerOpenMenu}>
+                  <Menu />
+                </Humberger>
+              </BoxMenu>
+            </TolBar>
+          </Container>
         </Navigation>
       </HideOnScroll>
 

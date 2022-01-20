@@ -83,7 +83,7 @@ export default function Service() {
 
         <Grid container spacing={3} sx={{ marginTop: "0" }}>
           {serviceData.map((item, index) => (
-            <Grid item sm={4} md={4} key={index}>
+            <Grid item sm={4} md={4} key={index} data-aos="fade-up">
               <Card
                 sx={{
                   boxShadow: "8px 10px 20px #F3F7FF",
