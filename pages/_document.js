@@ -12,6 +12,13 @@ export default class MyDocument extends Document {
           <meta name="theme-color" content={theme.palette.primary.main} />
           <link rel="shortcut icon" href="/logo.png" />
           <title>Trafalger</title>
+          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+          <meta name="keywords" content="Trafalger, Doctor, Healthy"></meta>
+          <meta
+            name="description"
+            content="Trafalgar provides progressive and affordable healthcare,
+              accessible on mobile and online for everyone"
+          ></meta>
           <link
             href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap"
             rel="stylesheet"

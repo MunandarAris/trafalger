@@ -54,7 +54,7 @@ export default function Banner() {
                 margin: "1.6rem 0rem",
               }}
             >
-              Trafalgar provides progressive, and affordable healthcare,
+              Trafalgar provides progressive and affordable healthcare,
               accessible on mobile and online for everyone
             </Typography>
             <Button
