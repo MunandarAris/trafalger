@@ -12,7 +12,6 @@ export default class MyDocument extends Document {
           <meta name="theme-color" content={theme.palette.primary.main} />
           <link rel="shortcut icon" href="/logo.png" />
           <title>Trafalger</title>
-          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
           <meta name="keywords" content="Trafalger, Doctor, Healthy"></meta>
           <meta
             name="description"
